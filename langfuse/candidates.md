@@ -6,13 +6,13 @@ Snapshot: 2026-10-15. Langfuse issues get picked up fast, so re-check before cla
 
 | Issue | Area | Why it fits |
 |---|---|---|
-| [#17949](https://github.com/langfuse/langfuse/issues/17949) Non-ASCII prompt variables are extracted but not compiled in evaluator and experiment prompts | evals, experiments | Clear bug, no comments yet; likely a small, unit-testable fix |
 | [#18002](https://github.com/langfuse/langfuse/issues/18002) Out-of-range usage value fails | ingestion, ClickHouse | Goes through the ingestion path; deeper learning. Still marked unconfirmed |
 
 ## Already taken (for reference)
 
 | Issue | Status |
 |---|---|
+| langfuse #17949 non-ASCII prompt variables not compiled | reporter's fix PR #17662 merged; PR #17983 open (checked 2026-10-15) |
 | langfuse-python #1976 tests fail without `LANGFUSE_*` env | PR #1979 by another contributor |
 | langfuse-python #1971 `ChatPromptClient.compile` placeholder bug | assigned, PR #1972 |
 | langfuse-python #1913 GCS detection substring match | assigned, PR #1914 |
