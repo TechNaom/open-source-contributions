@@ -25,5 +25,6 @@ Issues for **all** Langfuse repos, the Python SDK included, are tracked in `lang
 ## Pages
 
 - [notes/architecture.md](notes/architecture.md): how the system works
+- [notes/codespace-setup.md](notes/codespace-setup.md): running the full stack in GitHub Codespaces
 - [candidates.md](candidates.md): issues being considered
 - [user-stories/](user-stories/): one file per contribution
