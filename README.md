@@ -1,5 +1,7 @@
 # Open Source Contributions
 
+By **Manohar Papasani** ([@TechNaom](https://github.com/TechNaom)), GenAI Solution Architect.
+
 My log of contributions to open-source AI infrastructure: what I picked, why, what I
 learned about the system, and where each change ended up.
 
