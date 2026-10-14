@@ -18,7 +18,7 @@ stories, architecture notes, learning logs, and the status of every PR.
 
 | Date | Project | Issue | User story | PR | Status |
 |---|---|---|---|---|---|
-| | | | | | |
+| 2026-10-15 | Langfuse | [#18832](https://github.com/langfuse/langfuse/issues/18832) devcontainer: Corepack prompt hang + missing Rust | [US-001](langfuse/user-stories/US-001-devcontainer.md) | | Issue opened |
 
 ## How I work
 
