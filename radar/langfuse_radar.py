@@ -15,7 +15,7 @@ import urllib.parse
 import urllib.request
 
 UPSTREAM_REPOS = ["langfuse/langfuse"]  # all Langfuse issues, Python SDK included, live here
-LOOKBACK_DAYS = 3
+LOOKBACK_DAYS = int(os.environ.get("LOOKBACK_DAYS") or 3)
 TRACKING_TITLE = "Langfuse issue radar"
 SEEN_FILE = pathlib.Path(__file__).with_name("seen.json")
 
