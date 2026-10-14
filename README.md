@@ -22,7 +22,7 @@ stories, architecture notes, learning logs, and the status of every PR.
 
 ## How I work
 
-1. **Pick:** an open issue with no assignee and no linked PR, or a bug found while using the tool.
+1. **Pick:** an open issue with no assignee and no linked PR (the [issue radar](.github/workflows/langfuse-radar.yml) posts new ones to the "Langfuse issue radar" issue every 3 hours), or a bug found while using the tool.
 2. **Claim:** comment on the issue, describe the planned fix, and wait for a maintainer.
 3. **Story:** write a user story here with the problem, acceptance criteria and test plan.
 4. **Build:** branch in the fork, write the failing test first, then fix it.

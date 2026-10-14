@@ -1,0 +1,33 @@
+name: Langfuse issue radar
+
+on:
+  schedule:
+    - cron: "17 */3 * * *" # every 3 hours; unclaimed Langfuse issues go within days
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit radar/seen.json
+  issues: write # comment on the tracking issue
+
+concurrency:
+  group: langfuse-radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Find new unclaimed issues
+        run: python3 radar/langfuse_radar.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Remember reported issues
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add radar/seen.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "chore(radar): record reported Langfuse issues"
+          git push
