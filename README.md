@@ -12,7 +12,7 @@ stories, architecture notes, learning logs, and the status of every PR.
 
 | Project | What it is | Fork | Notes |
 |---|---|---|---|
-| [Langfuse](https://github.com/langfuse/langfuse) | Open-source LLM observability, evals and prompt management | [TechNaom/langfuse-python](https://github.com/TechNaom/langfuse-python) | [langfuse/](langfuse/) |
+| [Langfuse](https://github.com/langfuse/langfuse) | Open-source LLM observability, evals and prompt management | [TechNaom/langfuse](https://github.com/TechNaom/langfuse), [TechNaom/langfuse-python](https://github.com/TechNaom/langfuse-python) | [langfuse/](langfuse/) |
 
 ## Contributions
 

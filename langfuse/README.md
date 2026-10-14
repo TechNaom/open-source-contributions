@@ -8,7 +8,7 @@ of a tool I depend on.
 
 | Repo | Stack | Fork | Local checks |
 |---|---|---|---|
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Next.js 16, tRPC, Prisma, Postgres, ClickHouse, Redis, S3, Rust | not yet (GitHub Codespaces for the full stack) | `pnpm run lint`, `pnpm tc`, `pnpm exec knip`, `pnpm run test` |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Next.js 16, tRPC, Prisma, Postgres, ClickHouse, Redis, S3, Rust | [TechNaom/langfuse](https://github.com/TechNaom/langfuse) (run in GitHub Codespaces) | `pnpm run lint`, `pnpm tc`, `pnpm exec knip`, `pnpm run test` |
 | [langfuse/langfuse-python](https://github.com/langfuse/langfuse-python) | Python, OpenTelemetry, Pydantic, Fern-generated client | [TechNaom/langfuse-python](https://github.com/TechNaom/langfuse-python) | `uv run --frozen ruff check .`, `mypy langfuse`, `pytest tests/unit` |
 
 Issues for **all** Langfuse repos, the Python SDK included, are tracked in `langfuse/langfuse`.
